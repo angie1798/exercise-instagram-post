@@ -1,0 +1,81 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: lightgray;
+    margin: 30px 0;
+}
+
+.container{
+    width: 400px;
+    height: 565px;
+    background-color: white;
+    margin: 0 auto;
+}
+.num{
+    color:black;
+    display: inline;
+    float: right;
+    margin-top: 10px;
+}
+h2, h4{
+    float: left;
+    margin: 0;
+}
+h4, .title p{
+    display:block;
+    float: left;
+    margin-left: 3px;
+
+}
+.title p{
+    position: relative;
+    top:5px;
+    right: 55px;
+    font-weight: lighter;
+}
+.title{
+    background-color: white;
+    padding:10px;
+    font-weight: bolder;
+    height:70px;
+}
+.photoContainer{
+    position:relative;
+    bottom:30px;
+    height: 280px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.photoContainer img{
+    height: auto;
+    width: 100%;
+}
+@supports(object-fit: cover){
+    .photoContainer img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+.icons{
+    margin: 0 10px;
+    position: relative;
+    bottom: 20px;
+}
+.fa-bookmark{
+    float: right;
+}
+.likes{
+    padding: 0 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+.description{
+    position:relative;
+    bottom:30px;
+    margin: 0px 10px;
+}
